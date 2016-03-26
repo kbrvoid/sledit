@@ -56,6 +56,22 @@ section {
   background: #f0f0f0;
 }
 
+button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 5px;
+  background: #eaeaea;
+  color: #777;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 10pt;
+  text-shadow: rgba(255,255,255,0.5) 0 1px 2px;
+  text-decoration: none;
+  outline: none;
+}
+
 textarea {
   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
   width: 32%;
