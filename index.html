@@ -17,6 +17,8 @@
   <!-- JavaScript -->
   <script src="js/jquery.min.js" type="text/javascript"></script>
   <script src="js/editor.js" type="text/javascript"></script>
+  <script src="js/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
 
   <!-- Mobile Settings -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -41,5 +43,27 @@
     <textarea id="js" value="" placeholder="JavaScript" autocapitalize="off"></textarea>
     <iframe id="preview"></iframe>
   </section>
+  <script>
+        ace.require("ace/ext/language_tools");
+        var htmlEditor = ace.edit("html-editor");
+        htmlEditor.setTheme("ace/theme/twilight");
+        htmlEditor.getSession().setMode("ace/mode/html");
+        htmlEditor.setOptions({
+            enableBasicAutocompletion: true
+        });
+        var cssEditor = ace.edit("css-editor");
+        cssEditor.setTheme("ace/theme/twilight");
+        cssEditor.getSession().setMode("ace/mode/css");
+        cssEditor.setOptions({
+            enableBasicAutocompletion: true
+        });
+        var jsEditor = ace.edit("js-editor");
+        jsEditor.setTheme("ace/theme/twilight");
+        jsEditor.getSession().setMode("ace/mode/javascript");
+        jsEditor.setOptions({
+            enableBasicAutocompletion: true
+        });
+    </script>
+
 </body>
 </html>
